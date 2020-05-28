@@ -1,4 +1,4 @@
-const url = '/data.json' 
+const url = 'https://afarhansib.github.io/umara/data.json' 
 
 const status = response => {
   if (response.status !== 200) {
