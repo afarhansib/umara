@@ -1,0 +1,40 @@
+[
+	{
+		"cat_id": 1,
+		"cat_url": "snack-gurih",
+		"cat_name": "Snack Gurih",
+		"cat_items": [
+			{
+				"prod_id": 1,
+				"prod_url": "keripik-kelor",
+				"prod_name": "Keripik Kelor",
+				"prod_price": 14000,
+				"prod_image": "keripik-kelor.jpg",
+				"prod_desc": "Keripik lezat yang terbuat dari Kelor, dijamin bakal membuat ketagihan."
+			},
+			{
+				"prod_id": 2,
+				"prod_url": "keripik-tempe",
+				"prod_name": "Keripik Tempe",
+				"prod_price": 14000,
+				"prod_image": "keripik-tempe.jpg",
+				"prod_desc": "Keripik tempe khas Trenggalek, kerenyahannya pasti bikin nagih."
+			}
+		]
+	},
+	{
+		"cat_id": 2,
+		"cat_url": "snack-manis",
+		"cat_name": "Snack Manis",
+		"cat_items": [
+			{
+				"prod_id": 3,
+				"prod_url": "keciput-madu",
+				"prod_name": "Keciput Madu",
+				"prod_price": 16000,
+				"prod_image": "keciput-madu.jpg",
+				"prod_desc": "Jajanan sederhana yang menyerupai onde-onde, dibuat dengan madu khas pilihan."
+			}
+		]
+	}
+]

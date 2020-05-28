@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Umara Snack</title>
+  <meta name="description" content="Umara Snack Web Client">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Umara Snack">
+  <meta name="apple-mobile-web-app-title" content="Umara Snack">
+  <meta name="theme-color" content="#bf9b30">
+  <meta name="msapplication-navbutton-color" content="#bf9b30">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-starturl" content="/index.html">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" sizes="72x72" href="assets/img/icons/icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icons/icon-72x72.png">
+  <link rel="icon" sizes="96x96" href="assets/img/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="assets/img/icons/icon-96x96.png">
+  <link rel="icon" sizes="128x128" href="assets/img/icons/icon-128x128.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="assets/img/icons/icon-128x128.png">
+  <link rel="icon" sizes="144x144" href="assets/img/icons/icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icons/icon-144x144.png">
+  <link rel="icon" sizes="152x152" href="assets/img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icons/icon-152x152.png">
+  <link rel="icon" sizes="192x192" href="assets/img/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/img/icons/icon-192x192.png">
+  <link rel="icon" sizes="384x384" href="assets/img/icons/icon-384x384.png">
+  <link rel="apple-touch-icon" sizes="384x384" href="assets/img/icons/icon-384x384.png">
+  <link rel="icon" sizes="512x512" href="assets/img/icons/icon-512x512.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="assets/img/icons/icon-512x512.png">
+</head>
+
+<body>
+  <div id="blocker"></div>
+  <header>
+    <nav>
+      <div class="nav-desktop-wrapper">
+        <a href="#home">Umara Snack</a>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#pemesanan">Pemesanan</a></li>
+          <li><a href="#alamat">Alamat</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li>
+            <a href="#keranjang" class="cart">
+              <i class="material-icons">shopping_cart</i>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-mobile-wrapper">
+        <a class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <a href="#home">Umara Snack</a>
+        <a href="#keranjang" class="cart">
+          <i class="material-icons">shopping_cart</i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <ul class="sidenav" id="nav-mobile">
+    <!-- <li>
+  <div class="img-wrapper">
+    <img src="assets/img/icons/icon-512x512.png" alt="Icon UM">
+  </div>
+</li> -->
+    <li><a href="#home">Home</a></li>
+    <li><a href="#pemesanan">Pemesanan</a></li>
+    <li><a href="#alamat">Alamat</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+    <li><a href="#tentang">Tentang</a></li>
+    <li id="install-banner">
+      <a class="btn" id="install-btn">Install Aplikasi</a>
+    </li>
+  </ul>
+  <main>
+    <div class="lds-grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </main>
+  <footer title="27 Mei 2020 - 28 Mei 2020">
+    <p>Dibuat dengan</p>
+    <i class="material-icons">favorite</i>
+    <p> oleh
+      <a rel="noreferrer" href="https://afarhansib.github.io/" target="_blank">afarhansib</a>
+    </p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/router.js"></script>
+  <script src="assets/js/helper.js"></script>
+</body>
+
+</html>
