@@ -42,6 +42,7 @@
         <a href="#home">Umara Snack</a>
         <ul>
           <li><a href="#home">Home</a></li>
+          <li><a href="#kategori">Kategori</a></li>
           <li><a href="#pemesanan">Pemesanan</a></li>
           <li><a href="#alamat">Alamat</a></li>
           <li><a href="#kontak">Kontak</a></li>
@@ -66,21 +67,24 @@
       </div>
     </nav>
   </header>
-  <ul class="sidenav" id="nav-mobile">
+  <div class="sidenav" id="nav-mobile">
     <!-- <li>
   <div class="img-wrapper">
     <img src="assets/img/icons/icon-512x512.png" alt="Icon UM">
   </div>
 </li> -->
-    <li><a href="#home">Home</a></li>
-    <li><a href="#pemesanan">Pemesanan</a></li>
-    <li><a href="#alamat">Alamat</a></li>
-    <li><a href="#kontak">Kontak</a></li>
-    <li><a href="#tentang">Tentang</a></li>
-    <li id="install-banner">
-      <a class="btn" id="install-btn">Install Aplikasi</a>
-    </li>
-  </ul>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#kategori">Kategori</a></li>
+      <li><a href="#pemesanan">Pemesanan</a></li>
+      <li><a href="#alamat">Alamat</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+    </ul>
+    <div id="install-banner">
+      <a class="btn pulse" id="install-btn">Install Aplikasi</a>
+    </div>
+  </div>
   <main>
     <div class="lds-grid">
       <div></div>
@@ -101,7 +105,19 @@
       <a rel="noreferrer" href="https://afarhansib.github.io/" target="_blank">afarhansib</a>
     </p>
   </footer>
+  <div class="toast">
+    <div class="toast-msg">Ini adalah toast!</div>
+    <div class="toast-action">
+      <!-- <div class="toast-action-button">
+  <button class="btn">OK</button>
+</div> -->
+      <div class="toast-close">
+        <button class="btn-clear"><i class="material-icons">close</i></button>
+      </div>
+    </div>
+  </div>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/db.js"></script>
   <script src="assets/js/api.js"></script>
   <script src="assets/js/router.js"></script>
   <script src="assets/js/helper.js"></script>

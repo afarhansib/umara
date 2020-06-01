@@ -2,10 +2,10 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('sw.js')
       .then(reg => {
-        console.log('Service worker registered! 😎', reg)
+        console.log('Service worker registered! ☺')
       })
       .catch(err => {
-        console.log('😥 Service worker registration failed: ', err)
+        console.log('😐 Service worker registration failed: ', err)
       })
   })
 }
@@ -33,9 +33,11 @@ document.querySelector('#install-btn').addEventListener('click', event => {
 
 document.addEventListener("DOMContentLoaded", function() {
   initSidenav()
-  let page = window.location.hash.substr(1)
+  const url = location.hash.substr(1).split('/')
+  let page = url[0]
   if (page === "") page = "home"
-  loadPage(page)
+  const params = url[1]
+  loadPage(page, params)
 })
 
 const initSidenav = () => {
