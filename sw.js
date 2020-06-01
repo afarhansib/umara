@@ -74,13 +74,17 @@ const timeoutableFetch = (url, options = {}) => {
 }
 
 self.addEventListener('fetch', event => {
-
+  let exclude = 'chrome-extension:'
   // toastBroadcast.postMessage({ payload: event })
   // console.log(event.request)
   event.respondWith(
     timeoutableFetch(event.request).then(response => {
       caches.open(cacheName).then(function(cache) {
-        cache.put(event.request, response.clone())
+        if (event.request.url.indexOf(exclude) > -1) {
+          // console.log(event.request.clone())
+        } else {
+          cache.put(event.request, response.clone())
+        }
       })
       return response.clone()
     }).catch((err) => {
